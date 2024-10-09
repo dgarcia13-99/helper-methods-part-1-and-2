@@ -6,7 +6,7 @@
 
     <div>
       <div>
-        <%=link_to "Go back", movies_path >
+        <%=link_to "Go back", movies_path %>
       </div>
 
       <div>
@@ -14,8 +14,9 @@
       </div>
 
       <div>
-        <%= link_to "Delete Movie", @the_movie, data: { turbo_method: :delete } %>
+        <%= link_to "Delete movie", movie_path(@the_movie), data: { turbo_method: :delete } %>
       </div>
+
     </div>
 
     <dl>
