@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   # CREATE
   post "/movies" => "movies#create", as: :movies
-  get "/movies/new" => "movies#new", as: :new_movie
+  get "/movies/new" => "movies#new", as: :new_movie #->client facing path!
           
   # READ
   get "/movies" => "movies#index"
