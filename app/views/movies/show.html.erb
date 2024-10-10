@@ -1,7 +1,7 @@
 <div>
   <div>
     <h1>
-      Movie #<%= @the_movie.id %> details
+      Movie #<%= @movie.id %> details
     </h1>
 
     <div>
@@ -10,11 +10,11 @@
       </div>
 
       <div>
-        <%= link_to "Edit movie", @the_movie %>
+        <%= link_to "Edit movie", @movie %>
       </div>
 
       <div>
-        <%= link_to "Delete movie", movie_path(@the_movie), data: { turbo_method: :delete } %>
+        <%= link_to "Delete movie", movie_path(@movie), data: { turbo_method: :delete } %>
       </div>
 
     </div>
@@ -24,28 +24,28 @@
         Title
       </dt>
       <dd>
-        <%= @the_movie.title %>
+        <%= @movie.title %>
       </dd>
 
       <dt>
         Description
       </dt>
       <dd>
-        <%= @the_movie.description %>
+        <%= @movie.description %>
       </dd>
 
       <dt>
         Created at
       </dt>
       <dd>
-        <%= time_ago_in_words(@the_movie.created_at) %> ago
+        <%= time_ago_in_words(@movie.created_at) %> ago
       </dd>
 
       <dt>
         Updated at
       </dt>
       <dd>
-        <%= time_ago_in_words(@the_movie.updated_at) %> ago
+        <%= time_ago_in_words(@movie.updated_at) %> ago
       </dd>
     </dl>
   </div>
